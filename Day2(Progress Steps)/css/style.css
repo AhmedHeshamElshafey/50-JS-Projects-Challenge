@@ -1,0 +1,87 @@
+:root
+{
+    --color-full:#3498db;
+    --color-empty:#e0e0e0;
+}
+body{
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+}
+.container{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circlebox{
+    display: flex;
+    gap: 80px;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+.progress{
+    background-color: var(--color-full);
+    position:absolute;
+    width: 0%;
+    height: 3px;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width .5s;
+}
+.circlebox::after{
+    content:'';
+    height: 3px;
+    background-color:var(--color-empty);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+.circle{
+    width: 35px;
+    height: 35px;
+    border-radius:50% ;
+    border: 3px var(--color-empty) solid;
+    display: grid;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #999;
+}
+
+.circle span{
+    margin: auto;
+}
+
+.buttonbox{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    border: none;
+    background-color: var(--color-empty);
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.activebtn{
+    background-color: var(--color-full);
+    cursor: pointer;
+}
+
+.activelevel{
+   border-color: var(--color-full);
+   transition: all .5s .2s}
+
+.activebtn:active
+{
+    transform: scale(.98);
+}
+
