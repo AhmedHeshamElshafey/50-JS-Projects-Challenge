@@ -1,0 +1,70 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    margin: 0 45px ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+
+    background-position: center center;
+    background-size: cover;
+    height: 80%;
+    border-radius: 42px ;
+    width: 6%;
+    transition: width 1s ease-in-out;
+    display: flex;
+    cursor: pointer;
+}
+
+.card_1
+{
+    background-image: url(../imgs/bridge_img.jpg);
+}
+
+.card_2
+{
+    background-image: url(../imgs/forest_img.jpg);
+}
+
+.card_3
+{
+    background-image: url(../imgs/sea_img.jpg);
+}
+
+.card_4
+{
+    background-image: url(../imgs/Town_img.jpg);
+}
+
+.card_5
+{
+    background-image: url(../imgs/mountain_img.jpg);
+}
+
+.card h2
+{
+    opacity: 0;
+    color: white;
+    padding-left: 15px;
+    font-size: 32px;
+    font-weight: 600;
+    align-self: flex-end;
+    transition: all .3s .4s ease-in;
+}
+
+.active
+{
+    width: 65%;
+    h2 {
+    opacity: 1;
+    }
+}
