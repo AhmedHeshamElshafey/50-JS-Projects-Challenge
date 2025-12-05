@@ -1,0 +1,113 @@
+body
+{
+   margin: 0;
+   background-color: #222;
+   overflow-x: hidden;
+}
+.contianer{
+    width: 70%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    margin-top: 50px;
+    overflow: auto;
+}
+.contianer h1{
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+.contianer p{
+    color: #333;
+    line-height: 1.5;
+}
+.contianer span {
+    color: #555;
+}
+.contianer img{
+    width: 100%;
+}
+
+.iconcircle {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    border-radius: 0px 0px 100px 100px;
+    z-index:5;
+    gap: 54px;
+    transform-origin: top center;
+    transition: all 1s;
+}
+
+.iconcircle i {
+    font-size: 200%;
+    color: white;
+    cursor: pointer;
+}
+
+.artical {
+    transform-origin: top left;
+}
+
+.bigcontainer{
+    overflow: auto;
+    background-color: antiquewhite;
+     transform: rotate(-20deg) ;
+     transform-origin: top left;
+     padding-bottom:50px ;
+     transition: all 1s;
+}
+
+nav ul li 
+{ 
+    color: white;
+    list-style: none;
+    margin: 50px 20px;
+    font-size: 125%;
+    cursor: pointer;
+}
+
+nav
+{
+    position: absolute;
+    top: 60%;
+    left: -1%;
+    left: -23%;
+    transition: all 1s .1s;
+}
+
+#item2
+{
+    padding-left: 15px;
+}
+
+#item3
+{
+    padding-left: 30px;
+}
+
+.rotate
+{
+    transform: rotate(-90deg);
+}
+
+.openNav
+{
+transform: rotate(0deg) ;
+}
+
+.rotateNav
+{
+left: -1%;
+}
+
+#closeicon{
+        transform: translate(-8px, -12px);
+}
+
+
